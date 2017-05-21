@@ -1,0 +1,69 @@
+#Author: Jing Wang, for Program Design
+# try_complex is a Unix shell script that will be used to test project 5, problem #2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_complex
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_complex
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+1
+3
+-3.4
+-5.4
+3.1
+3
+2
+3
+4
+5
+2
+-5
+3.4
+5.4
+3.1
+4
+EndOfInput
+echo
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Complex Number Arithmetic Program:'
+echo '1. Add two complex numbers'
+echo '2. Subtract two complex numbers'
+echo '3. Multiply two complex numbers'
+echo '4. Quit'
+echo 'Choose an option (1 - 4): 1'
+echo 'Enter the real component for the first number:3'
+echo 'Enter the imaginary component for the first number:-3.4'
+echo 'Enter the real component for the second number:-5.4'
+echo 'Enter the imaginary component for the second number:3.1'
+echo 'The operation yields -2.400  -0.300i'
+echo '1. Add two complex numbers'
+echo '2. Subtract two complex numbers'
+echo '3. Multiply two complex numbers'
+echo '4. Quit'
+echo 'Choose an option (1 - 4): 3'
+echo 'Enter the real component for the first number:2'
+echo 'Enter the imaginary component for the first number:3'
+echo 'Enter the real component for the second number:4'
+echo 'Enter the imaginary component for the second number:5'
+echo 'The operation yields -7.000 + 22.000i'
+echo '1. Add two complex numbers'
+echo '2. Subtract two complex numbers'
+echo '3. Multiply two complex numbers'
+echo '4. Quit'
+echo 'Choose an option (1 - 4): 2'
+echo 'Enter the real component for the first number:-5'
+echo 'Enter the imaginary component for the first number:3.4'
+echo 'Enter the real component for the second number:5.4'
+echo 'Enter the imaginary component for the second number:3.1'
+echo 'The operation yields -10.400 + 0.300i'
+echo '1. Add two complex numbers'
+echo '2. Subtract two complex numbers'
+echo '3. Multiply two complex numbers'
+echo '4. Quit'
+echo 'Choose an option (1 - 4): 4'

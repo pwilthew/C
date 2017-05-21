@@ -1,0 +1,33 @@
+====================================================
+Complex Number Arithmetic Program: 
+
+The operation yields -2.400  -0.300i
+
+The operation yields -7.000 + 22.000i
+
+The operation yields -10.400 + 0.300i
+
+----------------------------------------------------
+Expected:
+
+Choose an option (1 - 4): 1
+Enter the real component for the first number:3
+Enter the imaginary component for the first number:-3.4
+Enter the real component for the second number:-5.4
+Enter the imaginary component for the second number:3.1
+The operation yields -2.400  -0.300i
+
+Choose an option (1 - 4): 3
+Enter the real component for the first number:2
+Enter the imaginary component for the first number:3
+Enter the real component for the second number:4
+Enter the imaginary component for the second number:5
+The operation yields -7.000 + 22.000i
+
+Choose an option (1 - 4): 2
+Enter the real component for the first number:-5
+Enter the imaginary component for the first number:3.4
+Enter the real component for the second number:5.4
+Enter the imaginary component for the second number:3.1
+The operation yields -10.400 + 0.300i
+

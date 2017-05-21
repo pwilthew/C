@@ -1,0 +1,53 @@
+# Written by Jing Wang for Program Design
+# try_replace is a Unix shell script that will be used to test project 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_replace
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_replace
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+23
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a three-digit number: 23'
+echo '$Ouput: Invalid input, the number must be between 100 and 999'
+echo '===================================================='
+./a.out <<-EndOfInput
+1930
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a three-digit number: 1930' 
+echo 'Output: Invalid input, the number must be between 100 and 999'
+echo '===================================================='
+./a.out <<-EndOfInput
+597
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a three-digit number: 597'
+echo 'Output: 153' 
+echo '===================================================='
+./a.out <<-EndOfInput
+100
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a three-digit number: '
+echo 'Output: 766'
+echo '===================================================='
+./a.out <<-EndOfInput
+999
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a three-digit number: '
+echo 'Output: 555'
+echo '===================================================='
+
+

@@ -1,0 +1,3 @@
+break /home/wcsc/Dropbox/aUSF/aSpring 2017/COP 3514/project7/frequency.c:26
+break /home/wcsc/Dropbox/aUSF/aSpring 2017/COP 3514/project7/frequency.c:39
+

@@ -1,0 +1,82 @@
+# Author: Jing Wang, for Program Design
+# try_dogs is a Unix shell script that will be used to test project 10.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_dogs
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_dogs
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+a
+73
+Max
+Bulldog
+White
+a
+65
+Molly
+Golden Retriever
+Smith
+a
+69
+Max
+Poodle
+Johnson
+a
+65
+a
+36
+Lucy
+Yorkshire
+Jones
+p
+s
+Buddy
+s
+Max
+q
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'opertion code: a'
+echo 'Enter patient number: 73'
+echo 'Enter dog name: Max'
+echo 'Enter breed: Bulldog'
+echo 'Enter owner last name: White'
+echo 'Enter operation code: a'
+echo 'Enter patient number: 65'
+echo 'Enter dog name: Molly'
+echo 'Enter breed: Golden Retriever'
+echo 'Enter owner last name: Smith'
+echo 'Enter operation code: a'
+echo 'Enter patient number: 69'
+echo 'Enter dog name: Max'
+echo 'Enter breed: Poodle' 
+echo 'Enter owner last name: Johnson'
+echo 'opertion code: a'
+echo 'Enter player number: 65'
+echo 'patient already existed.'
+echo 'Enter operation code: a'
+echo 'Enter patient number: 36'
+echo 'Enter dog name: Lucy'
+echo 'Enter breed: Yorkshire'
+echo 'Enter owner last name: Jones'
+echo 'Enter operation code: p'
+echo 'Number  Name		Breed		Owner Last Name'
+echo '73	Max		Bulldog			White'
+echo '65	Molly		Golden Retriever	Smith'
+echo '69        Max		Poodle			Johnson'
+echo '36	Lucy		Yorkshire		Jones'
+echo 'Enter operation code: f'
+echo 'Enter dog name: Buddy'
+echo 'Dog not found.'
+echo 'Enter operation code: f'
+echo 'Enter dog name: Max'
+echo '73	Max		Bulldog			White'
+echo '69        Max		Poodle			Johnson'
+echo 'Enter operation code: q'

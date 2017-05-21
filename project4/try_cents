@@ -1,0 +1,62 @@
+# Written by Jing Wang for Program Design
+# try_cents is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_cents
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_cents
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of cents: 0'
+echo 'Quarters: 0'
+echo 'Dimes: 0'
+echo 'Nickels : 0'
+echo 'Pennies: 0'
+echo '===================================================='
+./a.out <<-EndOfInput
+71
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of cents: 71'
+echo 'Quarters: 2'
+echo 'Dimes: 2'
+echo 'Nickels : 0'
+echo 'Pennies: 1'
+echo '===================================================='
+./a.out <<-EndOfInput
+84
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of cents: 84'
+echo 'Quarters: 3'
+echo 'Dimes: 0'
+echo 'Nickels : 1'
+echo 'Pennies: 4'
+echo '===================================================='
+./a.out <<-EndOfInput
+-1
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of cents: -1'
+echo 'Invalid amount -1'
+echo 'Amount must be between 0 and 10000, inclusive'
+echo '===================================================='
+./a.out <<-EndOfInput
+10001
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of cents: 10001'
+echo 'Invalid amount 10001'
+echo 'Amount must be between 0 and 10000, inclusive'
+echo '===================================================='
