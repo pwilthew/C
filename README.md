@@ -1,2 +1,2 @@
 # C
-School Projects in C
+Basic School Projects in C
